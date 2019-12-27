@@ -12,6 +12,7 @@ public class Product {
     @Column(unique = true)
     private String label;
 
+    @Column(name = "description")
     private String desc;
 
     @ManyToOne

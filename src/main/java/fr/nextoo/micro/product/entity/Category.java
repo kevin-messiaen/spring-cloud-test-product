@@ -1,10 +1,17 @@
 package fr.nextoo.micro.product.entity;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
 @Table(name = "category")
+@Getter
+@Setter
+@Builder
 public class Category {
 
     @Id
@@ -22,46 +29,5 @@ public class Category {
     @OneToMany(mappedBy = "category")
     private Collection<Product> products;
 
-    public Category() {
-    }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Category getParent() {
-        return parent;
-    }
-
-    public void setParent(Category parent) {
-        this.parent = parent;
-    }
-
-    public Collection<Category> getChildren() {
-        return children;
-    }
-
-    public void setChildren(Collection<Category> children) {
-        this.children = children;
-    }
-
-    public Collection<Product> getProducts() {
-        return products;
-    }
-
-    public void setProducts(Collection<Product> products) {
-        this.products = products;
-    }
 }

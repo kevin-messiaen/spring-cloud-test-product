@@ -1,6 +1,6 @@
 package fr.nextoo.micro.product.controller;
 
-import fr.nextoo.micro.product.dto.CategoryDto;
+import fr.nextoo.micro.common.dto.product.CategoryDto;
 import fr.nextoo.micro.product.service.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

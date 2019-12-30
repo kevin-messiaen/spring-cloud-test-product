@@ -1,6 +1,6 @@
 package fr.nextoo.micro.product.service;
 
-import fr.nextoo.micro.product.dto.ProductDto;
+import fr.nextoo.micro.common.dto.product.ProductDto;
 
 import java.util.Collection;
 
